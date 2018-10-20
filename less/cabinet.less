@@ -1,0 +1,170 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .content {
+        display: flex;
+        flex: 1 0 auto;
+    }
+
+    .footer {
+        flex: 0 0 auto;
+    }
+}
+
+.cabinet {
+    margin-top: 56px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .font-1;
+    .flex;
+
+    h2 {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+
+        span {
+            font-size: 24px;
+        }
+
+        &.name {
+            margin-top: 10px;
+            margin-bottom: 16px;
+        }
+
+        &.car {
+            text-decoration: underline;
+        }
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        .cabinet-small-text;
+        margin-bottom: 8px;
+        margin-top: 15px;
+    }
+
+    .info {
+        .cabinet-info-text;
+    }
+
+    .btn {
+        margin-top: 23px;
+    }
+
+    &__menu {
+        background-color: @pale-grey-two;
+        width: 250px;
+        padding-top: 20px;
+        margin: -20px 0;
+        margin-right: 12px;
+
+        li {
+            a {
+                display: block;
+                padding: 12px 0 12px 22px;
+                font-size: 14px;
+                line-height: 20px;
+                color: @black-two;
+                .animation;
+
+                &:hover {
+                    color: @warm-grey-three;
+                    background-color: @white;
+                }
+            }
+        }
+    }
+
+    &__col {
+        color: @black-three;
+        width: 250px;
+        margin: 0 12px;
+
+        &--wide {
+            width: 385px;
+        }
+
+        &-single {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: @white;
+            box-shadow: 0 6px 16px 0 fade(@black-two, 10%);
+
+            .top,
+            .bottom {
+                padding: 16px;
+            }
+
+            .top {
+                border-bottom: solid 1px @white-four;
+            }
+
+            .bottom {
+                &__card {
+                    margin: 40px auto;
+                    .flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    span {
+                        color: @warm-grey-three;
+                    }
+                }
+            }
+
+            .history {
+
+                &__header {
+                    display: block;
+                    padding: 13px 19px;
+                }
+
+                &__single {
+                    padding: 19px 19px 10px 21px;
+                    border-top: solid 1px @white-four;
+
+                    &:last-child {
+                        padding-bottom: 17px;
+                    }
+
+                    &-top {
+                        .cabinet-small-text;
+                        .flex;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                    }
+
+                    &-bottom {
+                        .sum {
+                            .cabinet-info-text;
+                            margin-bottom: 4px;
+
+                            &__points {
+                                color: @tealish-green;
+
+                                &--minus {
+                                    color: inherit;
+                                }
+                            }
+                        }
+
+                        .address {
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

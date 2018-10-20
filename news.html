@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>АЗС Flash | Новости</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header-wrap header-wrap--custom">
+        <div class="container">
+            <header class="header">
+                <div class="header__left">
+                    <div class="header__left-logo">
+                        <a href="/"><img src="image/flash-pay.png" alt="АЗС Flash"></a>
+                    </div>
+
+                    <nav class="header__left-nav">
+                        <ul>
+                            <li><a href="how_it_works.html">Как это работает</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="map.html">Карта АЗС</a></li>
+                            <li><a href="news.html" class="nav-active">Новости</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__right">
+                    <div class="header__right-geo">
+                        <a href="#">Тверская обл.</a>
+                    </div>
+
+                    <div class="header__right-reg">
+                        <a href="#">Регистрация</a>
+                        <a href="#" class="btn">Вход</a>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slider__wrap peppermint" id="peppermint">
+            <div class="slide slide--one">
+                <div class="slide__text">
+                    <h2 class="slide__text-heading">Кофе в подарок</h2>
+                    <p class="slide__text-comment">Заправляя полный бак на наших АЗС, Вы получаете бесплатный кофе на ваш выбор.</p>
+                </div>
+            </div>
+            <div class="slide slide--one">
+                <div class="slide__text">
+                    <h2 class="slide__text-heading">Кофе в подарок</h2>
+                    <p class="slide__text-comment">Заправляя полный бак на наших АЗС, Вы получаете бесплатный кофе на ваш выбор.</p>
+                </div>
+            </div>
+            <div class="slide slide--one">
+                <div class="slide__text">
+                    <h2 class="slide__text-heading">Кофе в подарок</h2>
+                    <p class="slide__text-comment">Заправляя полный бак на наших АЗС, Вы получаете бесплатный кофе на ваш выбор.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__arrows">
+            <a href="javascript:void(0)" class="slider__arrows-left arrow" id="slider__arrows-left"></a>
+            <a href="javascript:void(0)" class="slider__arrows-right arrow" id="slider__arrows-right"></a>
+        </div>
+    </div>
+
+    <div class="news">
+        <h2>Новости</h2>
+        <div class="news__content">
+            <div class="news__content-single">
+                <a href="javascript:void(0)">
+                    <img src="image/news1.png" alt="">
+                </a>
+                <time>12.01.18</time>
+                <a href="javascript:void(0)">
+                    <h3>Открытие АЗС в Ростовской области после реконструкции</h3>
+                </a>
+                <p>В Ростовской области после масштабной реконструкции открылась АЗС «Газпром» №230.</p>
+            </div>
+            <div class="news__content-single">
+                <a href="javascript:void(0)">
+                    <img src="image/news2.png" alt="">
+                </a>
+                <time>12.01.18</time>
+                <a href="javascript:void(0)">
+                    <h3>Акция «Скидка на ДТ»</h3>
+                </a>
+                <p>C 28.05.2018 года меняются условия получения скидки при заправке автомобиля дизельным топливом по акции «Скидка на ДТ».</p>
+            </div>
+            <div class="news__content-single">
+                <a href="javascript:void(0)">
+                    <img src="image/news3.png" alt="">
+                </a>
+                <time>12.01.18</time>
+                <a href="javascript:void(0)">
+                    <h3>Открытие АЗС в Ростовской области после реконструкции</h3>
+                </a>
+                <p>В Ростовской области послемасштабной реконструкции открылась АЗС «Газпром» №230.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-wrap">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__left">
+                    <div class="footer__left-logo">
+                        <a href="/"><img src="image/flash-pay.png" alt="АЗС Flash"></a>
+                    </div>
+
+                    <div class="footer__left-phone">
+                        <a href="tel:+78004355566">8 800 435 55 66</a>
+                    </div>
+
+                    <div class="footer__left-copyright">&copy; <a href="/">Flash АЗС</a></div>
+                </div>
+
+                <nav class="footer__center">
+                    <ul>
+                        <li><a href="how_it_works.html">Как это работает</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="map.html">Карта АЗС</a></li>
+                        <li><a href="personal_data.html">Политика в отношении обработки персональных данных</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__right">
+                    <a href="#"><img src="image/image-3.png" alt="App Store"></a>
+                    <a href="#"><img src="image/image-4.png" alt="Google Play"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/peppermint.min.js"></script>
+    <script>
+        var slider = Peppermint(document.querySelector('#peppermint'), {
+                slideshow: true,
+                speed: 500,
+                touchSpeed: 300,
+                slideshowInterval: 3500,
+                dots: true
+            }),
+
+            navLeft = document.querySelector('#slider__arrows-left'),
+            navRight = document.querySelector('#slider__arrows-right');
+
+        navRight.addEventListener('click', slider.next, false);
+        navLeft.addEventListener('click', slider.prev, false);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: @black-three;
+}
+
+.btn {
+    border-radius: 24px;
+    background-color: @pumpkin-orange;
+    padding: 5px 33px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: @white;
+    border: none;
+    cursor: pointer;
+    display: block;
+
+    &--transparent {
+        border: solid 1px @warm-grey-two;
+        color: @black-three;
+        background-color: transparent;
+        background-image: none;
+
+        &:hover {
+            background-color: @warm-grey-two;
+            color: @white;
+        }
+    }
+
+    &--big {
+        width: 338px;
+        font-size: 20px;
+        line-height: 26px;
+        padding: 15px 0;
+        border-radius: 28px;
+    }
+
+    &--orange {
+        background-image: linear-gradient(165deg, @pumpkin-orange-two, @blood-orange);
+
+        &:hover {
+            background-color: transparent;
+            background-image: none;
+            border: 2px solid @pumpkin-orange;
+            color: @pumpkin-orange;
+            padding: 13px 0;
+        }
+    }
+
+    &--reg {
+        width: 230px;
+    }
+
+    &--cabinet {
+        width: 126px;
+        padding: 5px 0;
+        margin: 0 auto;
+        background-color: @pumpkin-orange;
+        background-image: none;
+
+        &:hover {
+            padding: 3px 0;
+            border: 2px solid @pumpkin-orange;
+            color: @pumpkin-orange;
+            background-color: transparent;
+        }
+    }
+
+    &--logout {
+        color: @white;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+}
+
+section {
+    min-width: 1366px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.container {
+    min-width: 1316px;
+    max-width: 1316px;
+    padding: 0 25px;
+    margin: 0 auto;
+
+    &--functions {
+        display: flex;
+        justify-content: flex-end;
+        background: url(../image/group-183.png) no-repeat top left 170px;
+    }
+
+    &--benefits {
+        background: rgba(0, 0, 0, .78);
+        padding: 84px 0 35px 94px;
+        position: relative;
+
+        &::after {
+            display: block;
+            position: absolute;
+            width: 60%;
+            height: 120%;
+            content: "";
+            background: url(../image/group-171.png) no-repeat top -40px right 15px;
+            top: 0;
+            right: 0;
+            z-index: 20;
+        }
+    }
+
+    &--ways {
+        padding: 0 85px;
+    }
+
+    &--defence {
+        padding: 65px 337px 383px;
+        max-width: 692px;
+        min-width: 692px;
+        position: relative;
+
+        &::after {
+            display: block;
+            position: absolute;
+            width: 655px;
+            height: 211px;
+            content: "";
+            background: url(../image/hero-i-phone-x.png) no-repeat top center;
+            bottom: 40px;
+        }
+    }
+
+    &--reg {
+        height: 385px;
+        overflow-y: scroll;
+        padding-right: 10px;
+    }
+
+    &--filter {
+        padding: 45px 0 45px 272px;
+        max-width: 1044px;
+    }
+
+    &--sequence {
+        min-width: 842px;
+        max-width: 842px;
+        padding: 0;
+        .flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+a {
+    .font-1;
+    color: @white;
+}
+
+p {
+    .font-2;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+#sidemenu {
+    background: @dark-grey;
+    display: inline-block;
+    position: fixed;
+    top: 80px;
+    left: 20px;
+
+    li {
+        a {
+            display: block;
+            padding: 10px 20px;
+            .animation;
+            font-size: 13px;
+
+            &:hover {
+                background: @pumpkin-orange;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

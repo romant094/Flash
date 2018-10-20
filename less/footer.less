@@ -1,0 +1,81 @@
+.footer-wrap {
+    padding: 36px 0 31px;
+    background-color: @black-three;
+    color: @white;
+    min-width: 1366px;
+
+    .footer {
+        .flex;
+        justify-content: space-between;
+        padding-right: 280px;
+        position: relative;
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 190px;
+            height: 175px;
+            background: url(../image/path-149.png) no-repeat center top;
+            right: 34px;
+            top: -20px;
+        }
+
+        &__left {
+            .flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-logo {}
+
+            &-phone {
+                a {
+                    font-size: 22px;
+                    line-height: 29px;
+                    position: relative;
+                    padding-left: 25px;
+
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        content: "";
+                        width: 16.5px;
+                        height: 16.5px;
+                        background: url(../image/if-phone-2561369@2x.png) no-repeat center center;
+                        background-size: contain;
+                        left: 0;
+                        top: 5px;
+                    }
+                }
+            }
+
+            &-copyright {}
+        }
+
+        &__center {
+            border-left: 1px solid @warm-grey;
+            padding-left: 20px;
+            margin-right: 100px;
+
+            ul {
+                li:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__right {
+            .flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    a {
+        transition: 0.5s all;
+
+        &:hover {
+            color: @pumpkin-orange;
+        }
+    }
+}

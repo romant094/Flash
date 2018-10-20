@@ -1,0 +1,103 @@
+.header-wrap {
+    background-color: fade(@black-two, 82%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    &--custom {
+        background-color: @black-three;
+        position: relative;
+        min-width: 1366px;
+    }
+
+    .header {
+        .flex;
+        .space-between;
+        align-items: center;
+
+        &__left {
+            .flex;
+            .space-between;
+            align-items: center;
+
+            &-logo {
+                img {
+                    max-height: 19px
+                }
+            }
+
+            &-nav {
+                ul {
+                    .flex;
+                    .space-between;
+
+                    li {
+                        margin-left: 64px;
+
+                        &:first-child {
+                            margin-left: 125px;
+                        }
+
+                        a {
+                            display: block;
+                            padding: 20px 0;
+                            transition: 0.5s all;
+                            position: relative;
+
+                            &:hover {
+                                color: @pumpkin-orange;
+                            }
+                        }
+
+                        a.nav-active {
+                            color: @pumpkin-orange;
+                            border-bottom: 2px solid @pumpkin-orange;
+                            padding: 19.5px 0;
+
+                            &:hover {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__right {
+            .flex;
+            .space-between;
+            align-items: center;
+
+            &-geo {
+                margin-right: 37px;
+
+                a {
+                    border-bottom: 1px dashed @white;
+                    position: relative;
+
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        width: 11px;
+                        height: 16px;
+                        content: "";
+                        left: -16px;
+                        top: 3px;
+                        background: url(../image/if-streamline-20-185040.png) no-repeat center center;
+                    }
+                }
+            }
+
+            &-reg {
+                .flex;
+                align-items: center;
+
+                a:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
