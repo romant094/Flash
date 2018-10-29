@@ -1,8 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: @black-three;
+    overflow-x: hidden;
 }
-
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
 .btn {
     border-radius: 24px;
     background-color: @pumpkin-orange;
@@ -31,7 +34,7 @@ body {
         width: 338px;
         font-size: 20px;
         line-height: 26px;
-        padding: 15px 0;
+        padding: 15px;
         border-radius: 28px;
     }
 
@@ -85,14 +88,12 @@ h4 {
     letter-spacing: -0.4px;
 }
 
-section {
-    min-width: 1366px;
+.wrap {
     max-width: 1366px;
     margin: 0 auto;
 }
 
 .container {
-    min-width: 1316px;
     max-width: 1316px;
     padding: 0 25px;
     margin: 0 auto;
@@ -104,21 +105,23 @@ section {
     }
 
     &--benefits {
-        background: rgba(0, 0, 0, .78);
         padding: 84px 0 35px 94px;
         position: relative;
-
-        &::after {
-            display: block;
-            position: absolute;
-            width: 60%;
-            height: 120%;
-            content: "";
-            background: url(../image/group-171.png) no-repeat top -40px right 15px;
-            top: 0;
-            right: 0;
-            z-index: 20;
+        // &::after {
+        //     display: block;
+        //     position: absolute;
+        //     width: 60%;
+        //     height: 120%;
+        //     content: "";
+        //     background: url(../image/group-171.png) no-repeat top -40px right 15px;
+        //     top: 0;
+        //     right: 0;
+        //     z-index: 20;
+        // }
+        ul {
+            animation-delay: 0.3s;
         }
+
     }
 
     &--ways {
@@ -127,10 +130,9 @@ section {
 
     &--defence {
         padding: 65px 337px 383px;
-        max-width: 692px;
-        min-width: 692px;
+        // max-width: 692px;
+        // min-width: 692px;
         position: relative;
-
         &::after {
             display: block;
             position: absolute;
@@ -139,6 +141,7 @@ section {
             content: "";
             background: url(../image/hero-i-phone-x.png) no-repeat top center;
             bottom: 40px;
+            
         }
     }
 
@@ -149,13 +152,14 @@ section {
     }
 
     &--filter {
-        padding: 45px 0 45px 272px;
-        max-width: 1044px;
+        padding: 45px 0 45px 0;
+        margin: 0 auto;
+        max-width: 554px;
     }
 
     &--sequence {
-        min-width: 842px;
-        max-width: 842px;
+        // min-width: 842px;
+        max-width: 990px;
         padding: 0;
         .flex;
         flex-direction: column;
@@ -200,5 +204,15 @@ p {
 }
 
 .hidden {
+    display: none;
+}
+
+.boxHidded{
+    visibility: hidden; /*  Делаем иконки полностью прозрачными  */
+}
+.fadeInUp, .fadeOutDown{
+    visibility: visible;  /*  Делаем иконки полностью не прозрачными  */
+}
+.none {
     display: none;
 }

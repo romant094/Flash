@@ -26,8 +26,9 @@
 
     &__block {
         position: relative;
-        width: 336px;
-
+        display: flex;
+        align-items: center;
+        margin-bottom: 160px;
         &::before {
             .flex;
             justify-content: center;
@@ -42,63 +43,56 @@
             left: 50%;
             padding: 0 19.5px;
         }
-
         &--one {
-            width: 365px;
-            background: url(../image/phone-0.png) no-repeat top left 90px;
-            padding: 146px 0 250px 500px;
-            margin-bottom: 211px;
-
             &::before {
                 content: "1";
                 top: -72px;
             }
-
             img {
                 display: inline-block;
                 vertical-align: middle;
             }
+            .sequence__img {
+                width: 380px
+            }
         }
 
         &--two {
-            background: url(../image/phone-1.png) no-repeat top 80px left 230px, url(../image/boy-1.png) no-repeat top left;
-            padding: 200px 0 263px 529px;
-            margin-bottom: 215px;
-
+            padding-left: 200px;
             &::before {
                 content: "2";
                 top: -125px;
             }
+            .sequence__img--bg {
+                left: 0;
+            }
+            
         }
 
         &--three {
-            background: url(../image/phone-2.png) no-repeat top 50px right 220px, url(../image/boy-2.png) no-repeat top -20px right;
-            padding: 188px 588px 200px 66px;
-            margin-bottom: 180px;
-
+            padding-right: 200px;
             &::before {
                 content: "3";
                 top: -131px;
             }
+            .sequence__img--bg {
+                right: 0;
+            }
         }
 
         &--four {
-            background: url(../image/phone-3.png) no-repeat bottom 30px left 230px, url(../image/boy-3.png) no-repeat bottom 145px left 10px;
-            padding: 195px 0 41px 533px;
-            margin-bottom: 164px;
-
+            padding-left: 200px;
             &::before {
                 content: "4";
                 top: -118px;
             }
+            .sequence__img--bg {
+                left: 0;
+            }
         }
 
         &--five {
-            background: url(../image/phone-4.png) no-repeat top 50px right 212px, url(../image/boy-4.png) no-repeat top -20px right;
-            padding: 195px 581px 90px 81px;
-            margin-bottom: 221px;
-            max-width: 326px;
-
+            padding-right: 200px;
             &::before {
                 font-size: 24px;
                 font-weight: 500;
@@ -108,15 +102,19 @@
                 content: "или";
                 top: -126px;
             }
+            .sequence__img--bg {
+                right: 0;
+            }
         }
 
         &--six {
-            background: url(../image/phone-5.png) no-repeat bottom left 230px,
-            url(../image/boy-5.png) no-repeat top -5px left 15px;
-            padding: 192px 0 211px 534px;
+            padding-left: 200px;
             &::before {
                 content: "5";
                 top: -135px;
+            }
+            .sequence__img--bg {
+                left: 0;
             }
         }
 
@@ -139,5 +137,27 @@
                 content: "";
             }
         }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        width: 291px;
+        img {
+            width: 100%;
+        }
+        &--bg {
+            width: 340px;
+            position: absolute;
+            z-index: -1;
+            top: -73px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__text {
+        max-width: 400px;
+        padding: 20px;
     }
 }

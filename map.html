@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Теги сайта">
+    <meta name="description" content="Описание сайта">
     <title>АЗС Flash | Главная</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -11,138 +15,144 @@
     <div class="header-wrap">
         <div class="container">
             <header class="header">
-                <div class="header__left">
-                    <div class="header__left-logo">
-                        <a href="/"><img src="image/flash-pay.png" alt="АЗС Flash"></a>
-                    </div>
-
-                    <nav class="header__left-nav">
-                        <ul>
-                            <li><a href="how_it_works.html">Как это работает</a></li>
-                            <li><a href="about.html">О проекте</a></li>
-                            <li><a href="map.html" class="nav-active">Карта АЗС</a></li>
-                            <li><a href="news.html">Новости</a></li>
-                        </ul>
-                    </nav>
+                <div class="header__left-logo">
+                    <a href="/"><img src="image/flash-pay.png" alt="АЗС Flash"></a>
                 </div>
+                <nav class="header__left-nav">
+                    <ul>
+                        <li><a href="how_it_works.html" class="nav-active">Как это работает</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="map.html">Карта АЗС</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </nav>
 
                 <div class="header__right">
                     <div class="header__right-geo">
                         <a href="#">Тверская обл.</a>
                     </div>
-
                     <div class="header__right-reg">
                         <a href="#">Регистрация</a>
                         <a href="#" class="btn">Вход</a>
                     </div>
                 </div>
+                <button class="toggle_mnu">
+                    <span class="sandwich">
+                        <span class="sw-line sw-topper"></span>
+                        <span class="sw-line sw-bottom"></span>
+                        <span class="sw-line sw-footer"></span>
+                    </span>
+                </button>
 
             </header>
         </div>
     </div>
 
     <section class="filter">
-        <div class="container--filter">
-            <div class="filter__buttons">
-                <a href="#" class="btn">На карте</a>
-                <a href="#" class="btn btn--transparent btn--black">Списком</a>
-            </div>
-
-            <div class="filter__lists">
-                <div class="filter__lists-one">
-                    <span>Тип топлива:</span>
-                    <ul>
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">АИ-98</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">АИ-95</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">АИ-92</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">ДТ</span>
-                            </label>
-                        </li>
-                    </ul>
+        <div class="wrap">
+            <div class="container--filter">
+                <div class="filter__buttons">
+                    <a href="#" class="btn">На карте</a>
+                    <a href="#" class="btn btn--transparent btn--black">Списком</a>
                 </div>
-
-                <div class="filter__lists-one">
-                    <span>Дополнительный услуги:</span>
-                    <ul>
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Автомойка</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Подкачка</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Кафе</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Магазин</span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="filter__lists-one">
-                    <span>Цена:</span>
-                    <ul>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Ниже средней</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Средняя</span>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__original">
-                                <span class="checkbox__custom"></span><span class="checkbox__text">Выше средней</span>
-                            </label>
-                        </li>
-                    </ul>
+    
+                <div class="filter__lists">
+                    <div class="filter__lists-one">
+                        <span>Тип топлива:</span>
+                        <ul>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">АИ-98</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">АИ-95</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">АИ-92</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">ДТ</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="filter__lists-one">
+                        <span>Дополнительный услуги:</span>
+                        <ul>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Автомойка</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Подкачка</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Кафе</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Магазин</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="filter__lists-one">
+                        <span>Цена:</span>
+                        <ul>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Ниже средней</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Средняя</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__original">
+                                    <span class="checkbox__custom"></span><span class="checkbox__text">Выше средней</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="map">
@@ -225,6 +235,7 @@
             </div>
         </div>
     </footer>
+	<script src="js/common.js"></script>
 </body>
 
 </html>

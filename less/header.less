@@ -5,18 +5,18 @@
     right: 0;
     left: 0;
     z-index: 100;
+    max-width: 100%;
 
     &--custom {
         background-color: @black-three;
         position: relative;
-        min-width: 1366px;
+        // min-width: 1366px;
     }
 
     .header {
         .flex;
         .space-between;
         align-items: center;
-
         &__left {
             .flex;
             .space-between;
@@ -72,7 +72,7 @@
 
             &-geo {
                 margin-right: 37px;
-
+                padding-left: 20px;
                 a {
                     border-bottom: 1px dashed @white;
                     position: relative;
