@@ -1,4 +1,4 @@
 # Flash
 
-This is a project for petrol stations network named Flash.
-No adoptive design on the task. Doing it right now.
+This is a web for petrol stations network named Flash.
+Cooperater project with https://github.com/Lia5

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="body">
     <div class="header-wrap">
         <div class="container">
             <header class="header">
@@ -48,14 +48,14 @@
         </div>
     </div>
 
-    <section class="filter">
-        <div class="wrap">
+    <section class="filter display-none" id="filters-modal">
+        <div class="filter-content">
             <div class="container--filter">
                 <div class="filter__buttons">
-                    <a href="#" class="btn">На карте</a>
-                    <a href="#" class="btn btn--transparent btn--black">Списком</a>
+                    <a href="#" class="btn" id="mapShow">На карте</a>
+                    <a href="#" class="btn btn--transparent btn--black" id="listShow">Списком</a>
                 </div>
-    
+
                 <div class="filter__lists">
                     <div class="filter__lists-one">
                         <span>Тип топлива:</span>
@@ -66,21 +66,21 @@
                                     <span class="checkbox__custom"></span><span class="checkbox__text">АИ-98</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
                                     <span class="checkbox__custom"></span><span class="checkbox__text">АИ-95</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
                                     <span class="checkbox__custom"></span><span class="checkbox__text">АИ-92</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
@@ -89,7 +89,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="filter__lists-one">
                         <span>Дополнительный услуги:</span>
                         <ul>
@@ -99,21 +99,21 @@
                                     <span class="checkbox__custom"></span><span class="checkbox__text">Автомойка</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
                                     <span class="checkbox__custom"></span><span class="checkbox__text">Подкачка</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
                                     <span class="checkbox__custom"></span><span class="checkbox__text">Кафе</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
@@ -122,25 +122,25 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="filter__lists-one">
                         <span>Цена:</span>
                         <ul>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
                                     <span class="checkbox__custom"></span><span class="checkbox__text">Ниже средней</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
                                     <span class="checkbox__custom"></span><span class="checkbox__text">Средняя</span>
                                 </label>
                             </li>
-    
+
                             <li>
                                 <label class="checkbox">
                                     <input type="checkbox" class="checkbox__original">
@@ -152,7 +152,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
     <section class="map">
@@ -201,7 +200,10 @@
             </div>
         </div>
 
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa9898c46b7b5bcd7295e8454e9290e59afa8a09ab27899cb7026a6f1d56b02a2&amp;source=constructor" width="100%" height="610" frameborder="0"></iframe>
+        <div class="map__graphics">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa9898c46b7b5bcd7295e8454e9290e59afa8a09ab27899cb7026a6f1d56b02a2&amp;source=constructor"
+                width="100%" height="100%" frameborder="0"></iframe>
+        </div>
     </section>
 
     <footer class="footer-wrap">
@@ -235,7 +237,9 @@
             </div>
         </div>
     </footer>
-	<script src="js/common.js"></script>
+    <div class="filter__btn" id="filtersShow"><span>Фильтры</span></div>
+    <script src="js/common.js"></script>
+    <script src="js/map-fliters.js"></script>
 </body>
 
 </html>
